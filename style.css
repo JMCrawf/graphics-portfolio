@@ -234,7 +234,7 @@ nav li:nth-of-type(5) {
   margin: auto;
   display: block;
   width: 80%;
-  max-width: 700px;
+  max-width: 650px;
 }
 
 /* Caption of Modal Image */
@@ -470,6 +470,7 @@ section#contact {
     height: 95px;
     width: 108px;
   }
+  
   #sbs-img {
     width:80%;
   }
