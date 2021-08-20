@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animated Navigation</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Menu Overlay -->
+  <div class="overlay overlay-slide-left" id="overlay">
+  <!-- Menu Items -->
+    <nav>
+      <ul>
+        <li id="nav-1" class="slide-out-1"><a href="#home">Home</a></li>
+        <li id="nav-2" class="slide-out-2"><a href="#about">About</a></li>
+        <li id="nav-3" class="slide-out-3"><a href="#skills">Skills</a></li>
+        <li id="nav-4" class="slide-out-4"><a href="#projects">Projects</a></li>
+        <li id="nav-5" class="slide-out-5"><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+  <!-- Menu bars -->
+  <div class="menu-bars" id="menu-bars">
+    <div class="bar1"></div>
+    <div class="bar2"></div>
+    <div class="bar3"></div>
+  </div>
+  <!-- Sections -->
+  <section id="home"><a href="https://www.inversebloom.com" target="_blank">James Crawford</a>
+  <h1 class="welcome padding">Welcome to my graphics portfolio!</h1>
+  </section>
+
+  <section id="about" >
+    <div class="graphic-icons" data-aos="fade-right">
+      <i class="far fa-address-card"></i>
+    </div>
+    <div class="set-width padding" data-aos="fade-left" data-aos-delay="600">
+      <h1>Learn More About Me</h1>
+      <div class="normal-case"><p>Recently i have focused on obtaining a degree in computer science and furthering my learning with several short courses in web development (mostly programming).</p> 
+        <p>In addition to those achievements i have skills in graphic and web design. This site showcases some of the graphics work i have produced a while back.</p>
+      </div>
+    </div>
+  </section>
+  <section id="skills">
+      <div class="graphic-icons" data-aos="fade-right">
+        <i class="fas fa-dumbbell"></i>
+      </div>     
+      <div class="padding set-width" data-aos="fade-left" data-aos-delay="600">
+        <h1>These Are My Strengths</h1>
+        <div class="normal-case">
+          <p>Graphics apps that i have good familiarity with include - Photoshop, Illustrator and CorelDraw, very handy for producing nice designs and graphics. 
+            In addition i have used After Effects for animation, and Maya for 3D work.</p>
+          <p>In future i intend to use Corel Painter combined with my Wacom tablet as well :)</p>
+
+        </div>
+      </div>
+  </section> 
+  
+  <section id="projects">
+    <div>
+      <h1 style="text-align: center">My Projects</h1>
+      <div class="picture-icons">
+        <img id="bank-icon" src="./img/icons/commonwealth-bank-icon.gif" alt="Mockup design for presentation slides - Illustrator" data-aos="fade-in">
+        <img id="sbs-icon" src="./img/icons/sbs-icon.gif" alt="DVD cover design - Illustrator" data-aos="fade-in" data-aos-delay="200">
+        <img id="harrier1-icon" src="./img/icons/harrier1-icon.gif" alt="Harrier Jet created in Maya using NURBS curves/surfaces, not textured." data-aos="fade-in" data-aos-delay="300">
+        <img id="harrier2-icon" src="./img/icons/harrier2-icon.gif" alt="Harrier Jet pic 2 - these pics were rendered with raytracing set to the max." data-aos="fade-in" data-aos-delay="400">
+        <img id="harrier3-icon" src="./img/icons/harrier3-icon.gif" alt="Compositing exercise - original image changed by compositing techniques - Photoshop/After Effects." data-aos="fade-in" data-aos-delay="500">
+        <img id="jeep-icon" src="./img/icons/jeep-icon.gif" alt="Jeep Cherokee interface design - Illustrtor/Photoshop" data-aos="fade-in" data-aos-delay="600">
+        <img id="sony-icon" src="./img/icons/sony-icon.gif" alt="Sony interface design - Illustrator/Photoshop" data-aos="fade-in" data-aos-delay="800">
+        <img id="wrx-icon" src="./img/icons/wrx-icon.gif" alt="Impreza wrx created in Maya using Nurbs curves/surfaces." data-aos="fade-in" data-aos-delay="900">
+        <img id="site-icon" src="./img/icons/inverse-icon.gif" alt="Prior design for main website - features HTML/CSS." data-aos="fade-in" data-aos-delay="1000">
+      </div>
+    </div>
+  </section>
+  <section id="contact">
+    <div><h1 class="center">Contact Me</h1> 
+      <div class="social-icons">
+        <a href="http://www.linkedin.com/in/james-michael-crawford" target="_blank"><i class="fab fa-linkedin" data-aos="fade-in"></i></a>
+        <a href="https://github.com/JMCrawf/" target="_blank"><i class="fab fa-github" data-aos="fade-in" data-aos-delay="100"></i></a>
+        <a href="mailto:crawfjm@live.com.au" target="_blank"><i class="fas fa-at" data-aos="fade-in" data-aos-delay="200"></i></a>
+      </div>
+
+      <div class="copyright">
+        © 2021 James Crawford
+      </div>
+      
+      <!-- Start of modals -->
+      <div id="bank-modal" class="modal">
+        <span class="close">
+          <div class="close-button" id="close-bars">
+            <div class="close-bar1"></div>
+            <div class="close-bar2"></div>
+          </div>
+        </span>
+        <div>
+          <img class="modal-content" id="bank-img" src="img/full-size/commonwealth-bank.jpg">
+          <div id="caption1"></div>
+        </div>
+      </div>
+
+      <div id="sbs-modal" class="modal">
+        <span class="close">
+          <div class="close-button" id="close-bars">
+            <div class="close-bar1"></div>
+            <div class="close-bar2"></div>
+          </div>
+        </span>
+        <div>
+          <img class="modal-content" id="sbs-img" src="img/full-size/sbs.jpg">
+          <div id="caption2"></div>
+        </div>
+      </div>
+
+      <div id="harrier1-modal" class="modal">
+        <span class="close">
+          <div class="close-button" id="close-bars">
+            <div class="close-bar1"></div>
+            <div class="close-bar2"></div>
+          </div>
+        </span>
+        <div>
+          <img class="modal-content" id="harrier1-img" src="img/full-size/harrier 1.jpg">
+          <div id="caption3"></div>
+        </div>
+      </div>
+
+      <div id="harrier2-modal" class="modal">
+        <span class="close">
+          <div class="close-button" id="close-bars">
+            <div class="close-bar1"></div>
+            <div class="close-bar2"></div>
+          </div>
+        </span>
+        <div>
+          <img class="modal-content" id="harrier2-img" src="img/full-size/harrier 2.jpg">
+          <div id="caption4"></div>
+        </div>
+      </div>
+
+      <div id="harrier2-modal" class="modal">
+        <span class="close">
+          <div class="close-button" id="close-bars">
+            <div class="close-bar1"></div>
+            <div class="close-bar2"></div>
+          </div>
+        </span>
+        <div>
+          <img class="modal-content" id="harrier2-img" src="img/full-size/harrier 2.jpg">
+          <div id="caption4"></div>
+        </div>
+      </div>
+
+      <div id="harrier3-modal" class="modal">
+        <span class="close">
+          <div class="close-button" id="close-bars">
+            <div class="close-bar1"></div>
+            <div class="close-bar2"></div>
+          </div>
+        </span>
+        <div>
+          <img class="modal-content" id="harrier3-img" src="img/full-size/harrier compositing.jpg">
+          <div id="caption5"></div>
+        </div>
+      </div>
+
+      <div id="jeep-modal" class="modal">
+        <span class="close">
+          <div class="close-button" id="close-bars">
+            <div class="close-bar1"></div>
+            <div class="close-bar2"></div>
+          </div>
+        </span>
+        <div>
+          <img class="modal-content" id="jeep-img" src="img/full-size/jeep.jpg">
+          <div id="caption6"></div>
+        </div>
+      </div>
+
+      <div id="sony-modal" class="modal">
+        <span class="close">
+          <div class="close-button" id="close-bars">
+            <div class="close-bar1"></div>
+            <div class="close-bar2"></div>
+          </div>
+        </span>
+        <div>
+          <img class="modal-content" id="sony-img" src="img/full-size/sony.jpg">
+          <div id="caption7"></div>
+        </div>
+      </div>
+      
+      <div id="wrx-modal" class="modal">
+        <span class="close">
+          <div class="close-button" id="close-bars">
+            <div class="close-bar1"></div>
+            <div class="close-bar2"></div>
+          </div>
+        </span>
+        <div>
+          <img class="modal-content" id="wrx-img" src="img/full-size/wrx.jpg">
+          <div id="caption8"></div>
+        </div>
+      </div>
+
+      <div id="site-modal" class="modal">
+        <span class="close">
+          <div class="close-button" id="close-bars">
+            <div class="close-bar1"></div>
+            <div class="close-bar2"></div>
+          </div>
+        </span>
+        <div>
+          <img class="modal-content" id="site-img" src="img/full-size/site.jpg">
+          <div id="caption9"></div>
+        </div>
+      </div>
+      <!-- End of modals -->
+    </div>
+  </section>
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+<!-- AOS js -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({delay: 100, duration: 1000, once: false, mirror:false});
+</script>
+</html>
