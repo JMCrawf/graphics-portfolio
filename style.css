@@ -290,6 +290,10 @@ nav li:nth-of-type(5) {
   max-width: 800px;
 }
 
+#harrier3-img {
+  max-width: 580px;
+}
+
 /* --- Close bars for modals --------------------- */
 
 .close-button {
