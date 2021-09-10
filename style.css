@@ -452,9 +452,14 @@ section#contact {
 
 /* Media Query: Large Smartphone (Vertical) */
 @media (max-width: 600px) {
+  #home h1{
+    text-align: center;
+  }
+
   section#home a {
     top: 1rem;
     left: 1rem;
+    text-align: center;
   }
 
   .graphic-icons {
