@@ -40,158 +40,137 @@ navItems.forEach((nav) => {
     nav.addEventListener('click', toggleNav);
 });
 
+// Bank Modal ----------------------------------------
+let bankModal = document.getElementById("bank-modal");
+let cap1 = document.getElementById("caption1");
 
-// Modal code - fix repetition!
-
-// Bank modal --------------------------------------
-var bank_modal = document.getElementById("bank-modal");
-var bankImg = document.getElementById("bank-icon");
-var captionText1 = document.getElementById("caption1");
-var span = document.getElementsByClassName("close")[0];
-
-bankImg.onclick = function(){
-  bank_modal.style.display = "block";
-  captionText1.innerHTML = this.alt;
+function bankOpen(event){
+  bankModal.style.display = "block";
+  cap1.innerHTML = event.target.alt;
   body.classList.toggle('noscroll');
 }
 
-span.onclick = function() { 
-  bank_modal.style.display = "none";
+function bankClose(){
+  bankModal.style.display = "none";
   body.classList.toggle('noscroll');
 }
 
 // DVD modal - SBS -----------------------------------
 var sbsModal = document.getElementById("sbs-modal");
-var sbsImg = document.getElementById("sbs-icon");
-var captionText2 = document.getElementById("caption2");
-var span = document.getElementsByClassName("close")[1];
+var cap2 = document.getElementById("caption2");
 
-sbsImg.onclick = function(){
+function sbsOpen(event){
   sbsModal.style.display = "block";
-  captionText2.innerHTML = this.alt;
+  cap2.innerHTML = event.target.alt;
   body.classList.toggle('noscroll');
 }
 
-span.onclick = function() { 
+function sbsClose() { 
   sbsModal.style.display = "none";
   body.classList.toggle('noscroll');
 }
 
 // Harrier1 modal -----------------------------------
-var harrier1Modal = document.getElementById("harrier1-modal");
-var harrier1Img = document.getElementById("harrier1-icon");
-var captionText3 = document.getElementById("caption3");
-var span = document.getElementsByClassName("close")[2];
+var harrierOneModal = document.getElementById("harrier1-modal");
+var cap3 = document.getElementById("caption3");
 
-harrier1Img.onclick = function(){
-  harrier1Modal.style.display = "block";
-  captionText3.innerHTML = this.alt;
+function harrierOneOpen(event){
+  harrierOneModal.style.display = "block";
+  cap3.innerHTML = event.target.alt;
   body.classList.toggle('noscroll');
 }
 
-span.onclick = function() { 
-  harrier1Modal.style.display = "none";
+function harrierOneClose() { 
+  harrierOneModal.style.display = "none";
   body.classList.toggle('noscroll');
 }
 
 // Harrier2 modal -----------------------------------
-var harrier2Modal = document.getElementById("harrier2-modal");
-var harrier2Img = document.getElementById("harrier2-icon");
-var captionText4 = document.getElementById("caption4");
-var span = document.getElementsByClassName("close")[3];
+var harrierTwoModal = document.getElementById("harrier2-modal");
+var cap4 = document.getElementById("caption4");
 
-harrier2Img.onclick = function(){
-  harrier2Modal.style.display = "block";
-  captionText4.innerHTML = this.alt;
+function harrierTwoOpen(event){
+  harrierTwoModal.style.display = "block";
+  cap4.innerHTML = event.target.alt;
   body.classList.toggle('noscroll');
 }
 
-span.onclick = function() { 
-  harrier2Modal.style.display = "none";
+function harrierTwoClose() { 
+  harrierTwoModal.style.display = "none";
   body.classList.toggle('noscroll');
 }
 
 // Harrier3 Compositing ------------------------------
-var harrier3Modal = document.getElementById("harrier3-modal");
-var harrier3Img = document.getElementById("harrier3-icon");
-var captionText5 = document.getElementById("caption5");
-var span = document.getElementsByClassName("close")[5];
+var harrierThreeModal = document.getElementById("harrier3-modal");
+var cap5 = document.getElementById("caption5");
 
-harrier3Img.onclick = function(){
-  harrier3Modal.style.display = "block";
-  captionText5.innerHTML = this.alt;
+function harrierThreeOpen(event){
+  harrierThreeModal.style.display = "block";
+  cap5.innerHTML = event.target.alt;
   body.classList.toggle('noscroll');
 }
 
-span.onclick = function() { 
-  harrier3Modal.style.display = "none";
+function harrierThreeClose() { 
+  harrierThreeModal.style.display = "none";
   body.classList.toggle('noscroll');
 }
 
 // Jeep ------------------------------
 var jeepModal = document.getElementById("jeep-modal");
-var jeepImg = document.getElementById("jeep-icon");
-var captionText6 = document.getElementById("caption6");
-var span = document.getElementsByClassName("close")[6];
+var cap6 = document.getElementById("caption6");
 
-jeepImg.onclick = function(){
+function jeepOpen(event){
   jeepModal.style.display = "block";
-  captionText6.innerHTML = this.alt;
+  cap6.innerHTML = event.target.alt;
   body.classList.toggle('noscroll');
 }
 
-span.onclick = function() { 
+function jeepClose() { 
   jeepModal.style.display = "none";
   body.classList.toggle('noscroll');
 }
 
 // Sony ------------------------------
 var sonyModal = document.getElementById("sony-modal");
-var sonyImg = document.getElementById("sony-icon");
-var captionText7 = document.getElementById("caption7");
-var span = document.getElementsByClassName("close")[7];
+var cap7 = document.getElementById("caption7");
 
-sonyImg.onclick = function(){
+function sonyOpen(event){
   sonyModal.style.display = "block";
-  captionText7.innerHTML = this.alt;
+  cap7.innerHTML = event.target.alt;
   body.classList.toggle('noscroll');
 }
 
-span.onclick = function() { 
+function sonyClose() { 
   sonyModal.style.display = "none";
   body.classList.toggle('noscroll');
 }
 
 // WRX ------------------------------
 var wrxModal = document.getElementById("wrx-modal");
-var wrxImg = document.getElementById("wrx-icon");
-var captionText8 = document.getElementById("caption8");
-var span = document.getElementsByClassName("close")[8];
+var cap8 = document.getElementById("caption8");
 
-wrxImg.onclick = function(){
+function wrxOpen(event){
   wrxModal.style.display = "block";
-  captionText8.innerHTML = this.alt;
+  cap8.innerHTML = event.target.alt;
   body.classList.toggle('noscroll');
 }
 
-span.onclick = function() { 
+function wrxClose() { 
   wrxModal.style.display = "none";
   body.classList.toggle('noscroll');
 }
 
 // Site ------------------------------
 var siteModal = document.getElementById("site-modal");
-var siteImg = document.getElementById("site-icon");
-var captionText9 = document.getElementById("caption9");
-var span = document.getElementsByClassName("close")[9];
+var cap9 = document.getElementById("caption9");
 
-siteImg.onclick = function(){
+function siteDesignOpen(event){
   siteModal.style.display = "block";
-  captionText9.innerHTML = this.alt;
+  cap9.innerHTML = event.target.alt;
   body.classList.toggle('noscroll');
 }
 
-span.onclick = function() { 
+function siteDesignClose() { 
   siteModal.style.display = "none";
   body.classList.toggle('noscroll');
 }
